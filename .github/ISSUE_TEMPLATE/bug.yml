@@ -1,0 +1,30 @@
+name: Bug report / 问题反馈 / 問題回報
+description: Help us reproduce a problem in Aeterna.
+body:
+  - type: markdown
+    attributes:
+      value: "Reports are public. Do not include private dates, photos, backup passwords or purchase tokens. / 反馈公开可见，请勿包含私人信息。"
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform / 平台
+      options: [Android, iOS]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version / App 版本
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and OS version / 设备与系统版本
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened and how to reproduce / 问题与复现步骤
+      description: Include expected and actual behavior. / 请说明预期与实际行为。
+    validations:
+      required: true
